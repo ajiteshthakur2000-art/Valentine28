@@ -1,0 +1,19 @@
+function openLetter() {
+  document.getElementById("envelope-container").style.display = "none";
+  document.getElementById("letter-container").style.display = "block";
+}
+
+function stepOneYes() {
+  document.getElementById("step1").style.display = "none";
+  document.getElementById("step2").style.display = "block";
+}
+
+function showDates() {
+  document.getElementById("step2").style.display = "none";
+  document.getElementById("dates").style.display = "block";
+}
+
+function finalMsg(message) {
+  document.getElementById("dates").style.display = "none";
+  document.getElementById("final-text").innerText = message;
+}

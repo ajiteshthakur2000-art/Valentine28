@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Envelope Screen -->
+<div id="envelope-container" onclick="openLetter()">
+  <img src="envelope.png" id="envelope">
+  <p>♡ Letter for You ♡</p>
+</div>
+
+<!-- Letter Screen -->
+<div id="letter-container">
+  <div class="letter-box">
+
+    <h1>Will you be my Valentine? 💖</h1>
+
+    <img src="cat_heart.gif" class="cat">
+
+    <!-- First Yes / No -->
+    <div id="step1" class="buttons">
+      <img src="yes.png" class="btn" onclick="stepOneYes()">
+      <img src="no.png" class="btn">
+    </div>
+
+    <!-- Second Question -->
+    <div id="step2" class="hidden">
+      <p>
+        Would it be possible to celebrate this moment a little earlier,<br>
+        before Valentine’s Day? 💕
+      </p>
+      <button onclick="showDates()">Yes</button>
+      <button>No</button>
+    </div>
+
+    <!-- Date Options -->
+    <div id="dates" class="hidden">
+      <p>Thank you so much for understanding ❤️<br>We can meet on:</p>
+
+      <button onclick="finalMsg('Let’s talk and decide the place 😊')">
+        7th or 8th Feb
+      </button>
+
+      <button onclick="finalMsg('My place, at your time :) ')">
+        11th Feb
+      </button>
+
+      <button onclick="finalMsg('No worries ❤️ we’ll decide together')">
+        Some other date
+      </button>
+    </div>
+
+    <p id="final-text"></p>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
