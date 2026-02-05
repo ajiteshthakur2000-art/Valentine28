@@ -11,26 +11,26 @@
 
 <!-- Envelope Screen -->
 <div id="envelope-container" onclick="openLetter()">
-  <img src="envelope.png" id="envelope">
+  <img src="envelope.png" id="envelope" alt="Envelope">
   <p>♡ Letter for You ♡</p>
 </div>
 
 <!-- Letter Screen -->
-<div id="letter-container">
+<div id="letter-container" style="display:none;">
   <div class="letter-box">
 
     <h1>Will you be my Valentine? 💖</h1>
 
-    <img src="cat_heart.gif" class="cat">
+    <img src="cat_heart.gif" class="cat" alt="Cat with heart">
 
-    <!-- First Yes / No -->
+    <!-- First Question -->
     <div id="step1" class="buttons">
-      <img src="yes.png" class="btn" onclick="stepOneYes()">
-      <img src="no.png" class="btn">
+      <img src="yes.png" class="btn" alt="Yes" onclick="stepOneYes()">
+      <img src="no.png" class="btn" alt="No">
     </div>
 
     <!-- Second Question -->
-    <div id="step2" class="hidden">
+    <div id="step2" style="display:none;">
       <p>
         Would it be possible to celebrate this moment a little earlier,<br>
         before Valentine’s Day? 💕
@@ -40,7 +40,7 @@
     </div>
 
     <!-- Date Options -->
-    <div id="dates" class="hidden">
+    <div id="dates" style="display:none;">
       <p>Thank you so much for understanding ❤️<br>We can meet on:</p>
 
       <button onclick="finalMsg('Let’s talk and decide the place 😊')">
@@ -64,3 +64,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
